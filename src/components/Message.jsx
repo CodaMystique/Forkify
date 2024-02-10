@@ -1,4 +1,5 @@
 import React from "react";
+import icons from "../assets/icons.svg";
 
 /**
  * Component to display a message.
@@ -11,7 +12,7 @@ function Message({ message }) {
     <div className="message">
       <div>
         <svg>
-          <use href="src/img/icons.svg#icon-smile"></use>
+          <use href={`${icons}#icon-smile`}></use>
         </svg>
       </div>
       <p>{message}</p>

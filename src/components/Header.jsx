@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Form from "./Form.jsx";
 import Bookmarks from "./Bookmarks.jsx";
+import icons from "../assets/icons.svg";
+import Logo from "../assets/logo.png";
 
 /**
  * Header component for the application.
@@ -74,7 +76,7 @@ function Header({
 
   return (
     <header className="header">
-      <img src="src/img/logo.png" alt="Logo" className="header__logo" />
+      <img src={Logo} alt="Logo" className="header__logo" />
       <Form
         onChange={handleChange}
         value={query}
@@ -90,7 +92,7 @@ function Header({
               onClick={onAddRecipeClick}
             >
               <svg className="nav__icon">
-                <use href="src/img/icons.svg#icon-edit"></use>
+                <use href={`${icons}#icon-edit`}></use>
               </svg>
               <span>Add recipe</span>
             </button>

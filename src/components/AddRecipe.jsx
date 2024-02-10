@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import InputField from "./InputField";
 import Message from "./Message";
 import { FORKIFY_API_KEY } from "../util";
+import icons from "../assets/icons.svg";
 
 /**
  * AddRecipe component with a form for adding new recipes.
@@ -207,7 +208,7 @@ function AddRecipe({ isVisible, setIsVisible }) {
 
               <button className="btn upload__btn" type="submit">
                 <svg>
-                  <use href="src/img/icons.svg#icon-upload-cloud"></use>
+                  <use href={`${icons}#icon-upload-cloud`}></use>
                 </svg>
                 <span>Upload (DISABLED) </span>
               </button>

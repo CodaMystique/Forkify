@@ -1,5 +1,14 @@
 import React from "react";
+import icons from "../assets/icons.svg";
 
+/**
+ * Component for displaying a preview of recipes.
+ * @param {Object} props - Component props.
+ * @param {Array} props.recipes - Array of recipe objects.
+ * @param {string} props.selectedRecipeId - ID of the selected recipe.
+ * @param {function} props.setSelectedRecipeId - Function to set the selected recipe ID.
+ * @returns {JSX.Element} The JSX for the Preview component.
+ */
 function Preview({ recipes, selectedRecipeId, setSelectedRecipeId }) {
   console.log(recipes);
 
@@ -21,8 +30,8 @@ function Preview({ recipes, selectedRecipeId, setSelectedRecipeId }) {
           <div
             className={`preview__user-generated ${recipe.key ? "" : "hidden"}`}
           >
-            <svg>
-              <use href="src/img/icons.svg#icon-user" />
+            <svg className="preview__user-icon">
+              <use href={`${icons}#icon-user`} />
             </svg>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import icons from "../assets/icons.svg";
 
 /**
  * Component for pagination controls.
@@ -17,7 +18,7 @@ function Pagination({ onPageChange, currentPage, totalPages }) {
           onClick={() => onPageChange(currentPage - 1)}
         >
           <svg className="search__icon">
-            <use href="src/img/icons.svg#icon-arrow-left"></use>
+            <use href={`${icons}#icon-arrow-left`}></use>
           </svg>
           <span>Page {currentPage - 1}</span>
         </button>
@@ -31,7 +32,7 @@ function Pagination({ onPageChange, currentPage, totalPages }) {
         >
           <span>Page {currentPage + 1}</span>
           <svg className="search__icon">
-            <use href="src/img/icons.svg#icon-arrow-right"></use>
+            <use href={`${icons}#icon-arrow-right`}></use>
           </svg>
         </button>
       )}

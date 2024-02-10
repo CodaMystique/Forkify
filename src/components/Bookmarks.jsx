@@ -1,5 +1,6 @@
 import React from "react";
 import Preview from "./Preview";
+import icons from "../assets/icons.svg";
 
 /**
  * Component to display bookmarked recipes.
@@ -14,7 +15,8 @@ function Bookmarks({ bookmarkList, selectedRecipeId, setSelectedRecipeId }) {
     <>
       <button className="nav__btn nav__btn--bookmarks">
         <svg className="nav__icon">
-          <use href="src/img/icons.svg#icon-bookmark"></use>
+          {/* Replace the hardcoded address with the imported icon */}
+          <use href={`${icons}#icon-bookmark`}></use>
         </svg>
         <span>Bookmarks</span>
       </button>
@@ -24,7 +26,7 @@ function Bookmarks({ bookmarkList, selectedRecipeId, setSelectedRecipeId }) {
             <div className="message">
               <div>
                 <svg>
-                  <use href="src/img/icons.svg#icon-alert-triangle"></use>
+                  <use href={`${icons}#icon-alert-triangle`}></use>
                 </svg>
               </div>
               <p>No bookmarks yet. Find a nice recipe and bookmark it :)</p>

@@ -1,4 +1,5 @@
 import React from "react";
+import icons from "../assets/icons.svg";
 
 /**
  * Component to display an error message.
@@ -11,7 +12,7 @@ function Error({ message }) {
     <div className="error">
       <div>
         <svg>
-          <use href="src/img/icons.svg#icon-alert-triangle"></use>
+          <use href={`${icons}#icon-alert-triangle`}></use>
         </svg>
       </div>
       <p>{message}</p>

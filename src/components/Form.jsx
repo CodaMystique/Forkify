@@ -1,4 +1,5 @@
 import React from "react";
+import icons from "../assets/icons.svg";
 
 /**
  * Component for a basic form with a text input and a submit button.
@@ -38,7 +39,7 @@ function Form({ onChange, value, placeholder, onSubmit }) {
       />
       <button className="btn search__btn" type="submit">
         <svg className="search__icon">
-          <use href="src/img/icons.svg#icon-search"></use>
+          <use href={`${icons}#icon-search`}></use>
         </svg>
         <span>Search</span>
       </button>
