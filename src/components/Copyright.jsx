@@ -16,8 +16,7 @@ function Copyright() {
       >
         Jonas Schmedtmann
       </a>
-      . Use for learning or your portfolio. Don't use to teach. Developed in
-      React by Jonas's student{" "}
+      . For learning or portfolio use only. Developed in React by{" "}
       <a
         className="twitter-link"
         target="_blank"
@@ -26,6 +25,15 @@ function Copyright() {
       >
         CodaMystique
       </a>
+      . Source code on{" "}
+      <a
+        href="https://github.com/CodaMystique/Forkify/tree/master"
+        className="twitter-link"
+        target="_blank"
+      >
+        Github
+      </a>
+      .
     </p>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { createBrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import SearchResults from "./components/SearchResults";
 import Spinner from "./components/Spinner";
@@ -10,6 +11,11 @@ import AddRecipe from "./components/AddRecipe";
  * Main application component.
  * @returns {JSX.Element} The JSX for the main application.
  */
+
+// const router = createBrowserRouter({
+//   path: "/",
+// });
+
 function App() {
   // State hooks
   const [recipeList, setRecipeList] = useState([]);
