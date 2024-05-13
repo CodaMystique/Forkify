@@ -1,6 +1,6 @@
 # Forkify
 
-![Forkify](https://ibb.co/8PdxJXx)
+![Forkify](https://i.ibb.co/RQB6176/Screenshot-14-5-2024-0052-forkify-by-codamystique-netlify-app.jpg)
 
 Forkify is a recipe search and management application built with React, TanStack Query, and React Router. It allows users to search for recipes, view detailed information, and save their favorite recipes for future reference.
 
